@@ -1,0 +1,9 @@
+{
+    "name": "Accounting\/Ledger",
+    "title": "Accounting Ledger",
+    "explanation": "  Accounting Ledger",
+    "description": "  Accounting Ledger",
+    "version": 1,
+    "has_view": 1,
+    "tie_field": 0
+}

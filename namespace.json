@@ -1,0 +1,18 @@
+{
+    "AccountingJournal": {
+        "namespace": "Accounting\\Journal",
+        "controller": "JournalController"
+    },
+    "AccountingLedger": {
+        "namespace": "Accounting\\Ledger",
+        "controller": "LedgerController"
+    },
+    "AccountingChart": {
+        "namespace": "Accounting\\Chart",
+        "controller": "ChartController"
+    },
+    "AccountingCustomers": {
+        "namespace": "Accounting\\Customers",
+        "controller": "CustomersController"
+    }
+}

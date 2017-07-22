@@ -1,0 +1,9 @@
+{
+    "name": "Accounting\/Journal",
+    "title": "Accounting Journal",
+    "explanation": "  Accounting Journal",
+    "description": "  Accounting Journal",
+    "version": 1,
+    "has_view": 1,
+    "tie_field": 0
+}

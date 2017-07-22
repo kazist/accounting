@@ -1,0 +1,9 @@
+{
+    "name": "Chart",
+    "title": "Accounting Chart",
+    "explanation": "  Accounting Chart",
+    "description": "  Accounting Chart",
+    "version": 1,
+    "has_view": 1,
+    "tie_field": 0
+}

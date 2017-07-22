@@ -1,0 +1,9 @@
+{
+    "name": "Customers",
+    "title": "Accounting Customers",
+    "explanation": "  Accounting Customers",
+    "description": "  Accounting Customers",
+    "version": 1,
+    "has_view": 1,
+    "tie_field": 0
+}
