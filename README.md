@@ -1,2 +1,0 @@
-# accounting
-Kazist Accounting
