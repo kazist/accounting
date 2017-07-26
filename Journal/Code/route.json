@@ -1,0 +1,125 @@
+{
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Accounting\\Journal\\Code\\Controllers\\Admin\\JournalController::taskAction",
+            "unique_name": "admin.accounting.journal.task",
+            "route": "admin/accounting/journal/task",
+            "permissions": "can_write",
+            "arguments": "",
+            "keywords": "journal, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write"],
+                "ADMIN": ["can_write"]
+            }
+        }, {
+            "title": "Journal List",
+            "description": "Management of Journal.",
+            "controller": "Accounting\\Journal\\Code\\Controllers\\Admin\\JournalController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "admin.accounting.journal",
+            "route": "admin/accounting/journal",
+            "arguments": "",
+            "keywords": "journal, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Add Journal  ",
+            "description": "Add Journal .",
+            "controller": "Accounting\\Journal\\Code\\Controllers\\Admin\\JournalController::addAction",
+            "unique_name": "admin.accounting.journal.add",
+            "route": "admin/accounting/journal/add",
+            "permissions": "can_add",
+            "arguments": {},
+            "keywords": "journal, add",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"]
+            }
+        }, {
+            "title": "Edit Journal {{ item.name }}",
+            "description": "Edit Journal {{ item.name }}.",
+            "controller": "Accounting\\Journal\\Code\\Controllers\\Admin\\JournalController::editAction",
+            "unique_name": "admin.accounting.journal.edit",
+            "route": "admin/accounting/journal/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "journal, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Journal Detail: {{ item.name }}",
+            "description": "Journal Detail: {{ item.name }}",
+            "controller": "Accounting\\Journal\\Code\\Controllers\\Admin\\JournalController::detailAction",
+            "unique_name": "admin.accounting.journal.detail",
+            "route": "admin/accounting/journal/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "journal, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Journal Delete: {{ item.name }}",
+            "description": "Journal Delete: {{ item.name }}",
+            "controller": "Accounting\\Journal\\Code\\Controllers\\Admin\\JournalController::deleteAction",
+            "unique_name": "admin.accounting.journal.delete",
+            "route": "admin/accounting/journal/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "journal, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"]
+            }
+        }, {
+            "title": "Journal Save: {{ item.name }}",
+            "description": "Journal Save: {{ item.name }}",
+            "controller": "Accounting\\Journal\\Code\\Controllers\\Admin\\JournalController::saveAction",
+            "unique_name": "admin.accounting.journal.save",
+            "route": "admin/accounting/journal/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "journal, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }]
+} 	

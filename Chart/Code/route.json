@@ -1,0 +1,125 @@
+{
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Accounting\\Chart\\Code\\Controllers\\Admin\\ChartController::taskAction",
+            "unique_name": "admin.accounting.chart.task",
+            "route": "admin/accounting/chart/task",
+            "permissions": "can_write",
+            "arguments": "",
+            "keywords": "chart, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write"],
+                "ADMIN": ["can_write"]
+            }
+        }, {
+            "title": "Chart List",
+            "description": "Management of Chart.",
+            "controller": "Accounting\\Chart\\Code\\Controllers\\Admin\\ChartController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "admin.accounting.chart",
+            "route": "admin/accounting/chart",
+            "arguments": "",
+            "keywords": "chart, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Add Chart  ",
+            "description": "Add Chart .",
+            "controller": "Accounting\\Chart\\Code\\Controllers\\Admin\\ChartController::addAction",
+            "unique_name": "admin.accounting.chart.add",
+            "route": "admin/accounting/chart/add",
+            "permissions": "can_add",
+            "arguments": {},
+            "keywords": "chart, add",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"]
+            }
+        }, {
+            "title": "Edit Chart {{ item.name }}",
+            "description": "Edit Chart {{ item.name }}.",
+            "controller": "Accounting\\Chart\\Code\\Controllers\\Admin\\ChartController::editAction",
+            "unique_name": "admin.accounting.chart.edit",
+            "route": "admin/accounting/chart/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "chart, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Chart Detail: {{ item.name }}",
+            "description": "Chart Detail: {{ item.name }}",
+            "controller": "Accounting\\Chart\\Code\\Controllers\\Admin\\ChartController::detailAction",
+            "unique_name": "admin.accounting.chart.detail",
+            "route": "admin/accounting/chart/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "chart, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Chart Delete: {{ item.name }}",
+            "description": "Chart Delete: {{ item.name }}",
+            "controller": "Accounting\\Chart\\Code\\Controllers\\Admin\\ChartController::deleteAction",
+            "unique_name": "admin.accounting.chart.delete",
+            "route": "admin/accounting/chart/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "chart, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"]
+            }
+        }, {
+            "title": "Chart Save: {{ item.name }}",
+            "description": "Chart Save: {{ item.name }}",
+            "controller": "Accounting\\Chart\\Code\\Controllers\\Admin\\ChartController::saveAction",
+            "unique_name": "admin.accounting.chart.save",
+            "route": "admin/accounting/chart/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "chart, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }]
+} 	
