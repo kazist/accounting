@@ -1,0 +1,34 @@
+{
+    "title": "Accounting",
+    "description": "Accounting",
+    "alias": "accounting",
+    "icon": "fa fa-money",
+    "home_link": "accounting\/journal",
+    "path": "applications/Accounting",
+    "is_core": "1",
+    "menulist": [{
+            "title": "Charts",
+            "alias": "admin_accounting_chart",
+            "url": "admin/accounting/chart",
+            "icon": "fa fa-list-ol",
+            "children": []
+        }, {
+            "title": "Customers",
+            "alias": "admin_customers",
+            "url": "admin/customers",
+            "icon": "fa fa-users",
+            "children": []
+        }, {
+            "title": "Ledger",
+            "alias": "admin_ledger",
+            "url": "admin/ledger",
+            "icon": "fa fa-folder",
+            "children": []
+        }, {
+            "title": "Journal",
+            "alias": "admin_journal",
+            "url": "admin/journal",
+            "icon": "fa fa-bars",
+            "children": []
+        }]
+}
